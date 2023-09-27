@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>Ejemplo</title>
+</head>
+
+<body>
+	<!-- Formulario para listar todas las asignaturas -->
+	<form action="Controlador" method="get">
+		<h1>Listado de todas las asignaturas</h1>
+		<input type="submit" value="Consultar">
+	</form>
+	<br>
+	<br>
+	<!-- Formulario para listar información de una asignatura por su ID -->
+	<form action="Controlador" method="post">Listar la información de una asignatura concreta por su ID <input
+			type="number" name="id">
+		<input type="submit" value="Enviar">
+	</form>
+	<br>
+	<!-- Enlace a un formulario de creación de asignaturas -->
+	<a href="http://localhost:8080/EjercicioBD/formCrear.html">Enlace para formulario (Prueba creación)</a>
+	<br>
+	<br>
+	<!-- Enlace para probar la actualización de asignaturas -->
+	<a href="http://localhost:8080/EjercicioBD/formAct.html">Prueba Actualización</a>
+	</form>
+	<br>
+	<br>
+	<!-- Formulario para borrar una asignatura por su ID -->
+	<form action="DelAsig" method="post">Borrar una asignatura introduciendo ID <input type="number" name="id">
+		<input type="submit" value="Enviar">
+	</form>
+</body>
+
+</html>
